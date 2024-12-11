@@ -2,7 +2,7 @@
 #include <exception>
 
 
-Triangle::Triangle(float base, float height) : _base(base), _height(height)
+Triangle::Triangle(float base, float height) : Shape(), _base(base), _height(height)
 {
 }
 
