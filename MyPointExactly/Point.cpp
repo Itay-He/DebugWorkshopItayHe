@@ -16,8 +16,7 @@ Point::Point(int x, int y)
 
 Point::Point(const Point& other)
 {
-	delete _coord;
-	_coord = other._coord;
+	*this = other;
 }
 
 Point::~Point()
