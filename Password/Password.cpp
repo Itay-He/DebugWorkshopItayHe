@@ -2,7 +2,7 @@
 
 struct Password
 {
-	char value[16]; // the bug is if i enter 15 chars then 1 -> set incorrect = true, the main checks if its not the same and if !incorrect is true => prints "Congratulations"
+	char value[16]; 
 	bool incorrect;
 	Password() : value(""), incorrect(true)
 	{
@@ -19,7 +19,7 @@ int main()
 		pwd.incorrect = false;
 
 	if(!pwd.incorrect)
-		std::cout << "Congratulations\n";
+		std::cout << "Congratulations\n" << "the bug is if i enter 15 chars then 1 -> set incorrect = true, the main checks if its not the same and if !incorrect is true => prints \"Congratulations\"";
 
 	return 0;
 }
