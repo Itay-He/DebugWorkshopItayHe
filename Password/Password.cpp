@@ -2,7 +2,7 @@
 
 struct Password
 {
-	char value[16];
+	char value[16]; // the bug is if i enter 15 chars then 1 -> set incorrect = true, the main checks if its not the same and if !incorrect is true => prints "Congratulations"
 	bool incorrect;
 	Password() : value(""), incorrect(true)
 	{
